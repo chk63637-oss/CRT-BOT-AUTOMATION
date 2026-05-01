@@ -57,6 +57,10 @@ def is_tf_candle_closed(tf_label: str, candles: List[Dict]) -> bool:
     is_closed      = now_utc > buffer_dt
     diff_min       = round((now_utc - close_dt).total_seconds() / 60, 1)
 
+    # It must be past the buffer time, BUT it must also be a fresh close (within 60 mins).
+    # If diff_min > 60, it's an old H2/H4 candle that was already checked in a previous hour.
+    is_closed      = (now_utc > buffer_dt) and (diff_min <= 60)
+
     log.debug(
         f"isTFCandleClosed [{tf_label}]: detectCandle={target['time']}"
         f"  closedAt={close_dt.strftime('%H:%M')} UTC"
