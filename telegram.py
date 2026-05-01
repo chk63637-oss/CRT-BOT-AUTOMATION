@@ -43,7 +43,7 @@ def format_message(
         f"{emoji} *{pair}*  {arrow}  \\[{tf_label}\\]",
         "━━━━━━━━━━━━━━━━━━━━",
         f"📌 *{signal['type']}*",
-        f"🕐 *Time (IST):*  `{convert_to_ist(signal['candle_time'])}`",
+        f"🕐 *Candle Open (IST):* `{convert_to_ist(signal['candle_time'])}`",
         f"🎯 *Kill Zone:*   {kill_zone_label}",
         "━━━━━━━━━━━━━━━━━━━━",
         "📐 *Candle Reference Range*",

@@ -52,12 +52,19 @@ def compute_simple_atr(candles: List[Dict], period: int) -> float:
 def _h2_bucket_key(datetime_str: str) -> str:
     """
     Maps H1 candle datetime to its H2 bucket key.
-    "2026-04-29 03:00:00" → "2026-04-29 02:00:00"
+    TradingView H2 Forex candles start on ODD UTC hours (01:00, 03:00...).
+    "2026-04-29 02:00:00" -> "2026-04-29 01:00:00"
+    "2026-04-29 00:00:00" -> "2026-04-28 23:00:00"
     """
-    date_part, time_part = datetime_str.split(" ")
-    hour   = int(time_part.split(":")[0])
-    bucket = floor(hour / 2) * 2
-    return f"{date_part} {bucket:02d}:00:00"
+    from datetime import datetime, timedelta
+    dt = datetime.fromisoformat(datetime_str.replace(" ", "T"))
+    
+    # Shift back 1 hour, bucket to even hour, shift forward 1 hour
+    shifted = dt - timedelta(hours=1)
+    bucket_hour = (shifted.hour // 2) * 2
+    bucket_dt = shifted.replace(hour=bucket_hour, minute=0, second=0) + timedelta(hours=1)
+    
+    return bucket_dt.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def build_h2_candles(h1_candles: List[Dict]) -> List[Dict]:
