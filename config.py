@@ -47,7 +47,7 @@ PAIRS = [
 
 # ── API rate limit sleep (seconds) ───────────────────────────
 # Twelve Data free = 8 req/min → 8s between calls
-API_SLEEP = 8
+API_SLEEP = 10
 
 # ── Scheduler ────────────────────────────────────────────────
 # Run at :35 of every hour (IST :35 = candle close + 5 min)
