@@ -1,9 +1,8 @@
 name: CRT Bot Automation
 
 on:
-  schedule:
-    # Runs at minute 35 past every hour
-    - cron: '35 * * * *'
+  repository_dispatch:
+    types: [run-bot]
   workflow_dispatch: # Allows you to run it manually from GitHub website if needed
 
 jobs:
