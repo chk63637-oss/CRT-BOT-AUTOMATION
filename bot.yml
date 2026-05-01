@@ -1,0 +1,29 @@
+name: CRT Bot Automation
+
+on:
+  schedule:
+    # Runs at minute 35 past every hour
+    - cron: '35 * * * *'
+  workflow_dispatch: # Allows you to run it manually from GitHub website if needed
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Bot
+        run: |
+          # Use --run-now to run exactly once and exit (perfect for GitHub Actions)
+          python main.py --run-now

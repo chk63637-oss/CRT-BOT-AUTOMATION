@@ -1,0 +1,453 @@
+[2026-04-30 19:08:37] INFO  — Test message sent to Telegram.
+[2026-04-30 19:11:23] INFO  — ╔══════════════════════════════════════════╗
+[2026-04-30 19:11:23] INFO  — ║   CRT Forex Alert Bot v1.0 — Starting    ║
+[2026-04-30 19:11:23] INFO  — ╚══════════════════════════════════════════╝
+[2026-04-30 19:11:23] INFO  — Pairs    : 12
+[2026-04-30 19:11:23] INFO  — Schedule : Every hour at :35 (exact)
+[2026-04-30 19:11:23] INFO  — Session  : 7:00–21:00 UTC
+[2026-04-30 19:11:23] INFO  — ✅ Scheduler started — next run at :35 UTC
+[2026-04-30 19:11:23] INFO  —    Press Ctrl+C to stop.
+
+[2026-05-01 02:24:14] INFO  — ╔══════════════════════════════════════════╗
+[2026-05-01 02:24:15] INFO  — ║   CRT Forex Alert Bot v1.0 — Starting    ║
+[2026-05-01 02:24:15] INFO  — ╚══════════════════════════════════════════╝
+[2026-05-01 02:24:15] INFO  — Pairs    : 12
+[2026-05-01 02:24:15] INFO  — Schedule : Every hour at :35 (exact)
+[2026-05-01 02:24:15] INFO  — Session  : 7:00–21:00 UTC
+[2026-05-01 02:24:15] INFO  — ✅ Scheduler started — next run at :35 UTC
+[2026-05-01 02:24:15] INFO  —    Press Ctrl+C to stop.
+
+[2026-05-01 02:30:47] INFO  — Test message sent to Telegram.
+[2026-05-01 02:30:58] INFO  — === CRT v1.0 Alert Run — 2026-04-30T21:00:58.686236+00:00 ===
+[2026-05-01 02:30:58] INFO  — ⏸  UTC hour 21 outside session (7–21 UTC). Skipping — no API calls made.
+[2026-05-01 02:31:14] DEBUG — Fetching EUR/USD [1h] — attempt 1
+[2026-05-01 02:31:15] DEBUG — EUR/USD [1h] fetched 20 candles
+[2026-05-01 02:32:15] DEBUG — Fetching EUR/USD [1h] — attempt 1
+[2026-05-01 02:32:17] DEBUG — EUR/USD [1h] fetched 20 candles
+[2026-05-01 02:32:20] DEBUG — Fetching EUR/USD [4h] — attempt 1
+[2026-05-01 02:32:22] DEBUG — EUR/USD [4h] fetched 205 candles
+[2026-05-01 02:32:25] DEBUG — EMA bias — close:1.17318  EMA:1.16685  upper:1.16709  lower:1.16662
+[2026-05-01 02:32:25] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-04-30 20:00:00  closedAt=21:00 UTC  diff=2.4min  closed=True
+[2026-05-01 02:32:25] DEBUG — [H1] Forming candle excluded: [19] 2026-04-30 21:00:00 | Using CLOSED candle at [18] 2026-04-30 20:00:00 as current
+[2026-05-01 02:32:25] DEBUG — [H1] EUR/USD [2026-04-30 20:00:00] — ATR filtered (6.9 pips < 50% ATR 15.6 pips)
+[2026-05-01 02:32:25] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-04-30 19:00:00
+[2026-05-01 02:32:25] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-04-30 18:00:00  closedAt=20:00 UTC  diff=62.4min  closed=True
+[2026-05-01 02:32:25] DEBUG — [H2] Forming candle excluded: [9] 2026-04-30 20:00:00 | Using CLOSED candle at [8] 2026-04-30 18:00:00 as current
+[2026-05-01 02:32:25] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [7] 2026-04-30 16:00:00
+[2026-05-01 02:32:25] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-04-30 17:00:00  closedAt=21:00 UTC  diff=2.4min  closed=True
+[2026-05-01 02:32:25] DEBUG — [H4] Forming candle excluded: [204] 2026-04-30 21:00:00 | Using CLOSED candle at [203] 2026-04-30 17:00:00 as current
+[2026-05-01 02:32:25] DEBUG — [H4] EUR/USD [2026-04-30 17:00:00] — ATR filtered (17.0 pips < 50% ATR 337.6 pips)
+[2026-05-01 02:32:25] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 13:00:00
+[2026-05-01 02:32:25] DEBUG — [H4] EUR/USD [2026-04-30 13:00:00] — ATR filtered (65.1 pips < 50% ATR 337.6 pips)
+[2026-05-01 02:32:25] DEBUG — Fetching GBP/USD [1h] — attempt 1
+[2026-05-01 02:32:26] DEBUG — GBP/USD [1h] fetched 20 candles
+[2026-05-01 02:32:29] DEBUG — Fetching GBP/USD [4h] — attempt 1
+[2026-05-01 02:32:30] DEBUG — GBP/USD [4h] fetched 205 candles
+[2026-05-01 02:32:33] DEBUG — EMA bias — close:1.36041  EMA:1.34200  upper:1.34227  lower:1.34173
+[2026-05-01 02:32:33] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-04-30 20:00:00  closedAt=21:00 UTC  diff=2.6min  closed=True
+[2026-05-01 02:32:33] DEBUG — [H1] Forming candle excluded: [19] 2026-04-30 21:00:00 | Using CLOSED candle at [18] 2026-04-30 20:00:00 as current
+[2026-05-01 02:32:33] DEBUG — [H1] GBP/USD [2026-04-30 20:00:00] — ATR filtered (8.4 pips < 50% ATR 20.8 pips)
+[2026-05-01 02:32:33] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-04-30 19:00:00
+[2026-05-01 02:32:33] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-04-30 18:00:00  closedAt=20:00 UTC  diff=62.6min  closed=True
+[2026-05-01 02:32:33] DEBUG — [H2] Forming candle excluded: [9] 2026-04-30 20:00:00 | Using CLOSED candle at [8] 2026-04-30 18:00:00 as current
+[2026-05-01 02:32:33] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [7] 2026-04-30 16:00:00
+[2026-05-01 02:32:33] DEBUG — [H2] GBP/USD [2026-04-30 16:00:00] — ATR filtered (14.5 pips < 50% ATR 30.0 pips)
+[2026-05-01 02:32:33] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-04-30 17:00:00  closedAt=21:00 UTC  diff=2.6min  closed=True
+[2026-05-01 02:32:33] DEBUG — [H4] Forming candle excluded: [204] 2026-04-30 21:00:00 | Using CLOSED candle at [203] 2026-04-30 17:00:00 as current
+[2026-05-01 02:32:33] DEBUG — [H4] GBP/USD [2026-04-30 17:00:00] — ATR filtered (34.0 pips < 50% ATR 640.7 pips)
+[2026-05-01 02:32:33] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 13:00:00
+[2026-05-01 02:32:33] DEBUG — [H4] GBP/USD [2026-04-30 13:00:00] — ATR filtered (87.2 pips < 50% ATR 640.7 pips)
+[2026-05-01 02:32:33] DEBUG — Fetching AUD/USD [1h] — attempt 1
+[2026-05-01 02:32:35] DEBUG — AUD/USD [1h] fetched 20 candles
+[2026-05-01 02:32:38] DEBUG — Fetching AUD/USD [4h] — attempt 1
+[2026-05-01 02:32:39] DEBUG — AUD/USD [4h] fetched 205 candles
+[2026-05-01 02:32:42] DEBUG — EMA bias — close:0.71989  EMA:0.70589  upper:0.70604  lower:0.70575
+[2026-05-01 02:32:42] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-04-30 20:00:00  closedAt=21:00 UTC  diff=2.7min  closed=True
+[2026-05-01 02:32:42] DEBUG — [H1] Forming candle excluded: [19] 2026-04-30 21:00:00 | Using CLOSED candle at [18] 2026-04-30 20:00:00 as current
+[2026-05-01 02:32:42] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-04-30 19:00:00
+[2026-05-01 02:32:42] DEBUG — [H1] AUD/USD [2026-04-30 19:00:00] — ATR filtered (4.6 pips < 50% ATR 11.9 pips)
+[2026-05-01 02:32:42] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-04-30 18:00:00  closedAt=20:00 UTC  diff=62.7min  closed=True
+[2026-05-01 02:32:42] DEBUG — [H2] Forming candle excluded: [9] 2026-04-30 20:00:00 | Using CLOSED candle at [8] 2026-04-30 18:00:00 as current
+[2026-05-01 02:32:42] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [7] 2026-04-30 16:00:00
+[2026-05-01 02:32:42] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-04-30 17:00:00  closedAt=21:00 UTC  diff=2.7min  closed=True
+[2026-05-01 02:32:42] DEBUG — [H4] Forming candle excluded: [204] 2026-04-30 21:00:00 | Using CLOSED candle at [203] 2026-04-30 17:00:00 as current
+[2026-05-01 02:32:42] DEBUG — [H4] AUD/USD [2026-04-30 17:00:00] — ATR filtered (21.7 pips < 50% ATR 717.9 pips)
+[2026-05-01 02:32:42] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 13:00:00
+[2026-05-01 02:32:42] DEBUG — [H4] AUD/USD [2026-04-30 13:00:00] — ATR filtered (41.4 pips < 50% ATR 717.9 pips)
+[2026-05-01 02:33:56] DEBUG — Fetching AUD/USD [4h] — attempt 1
+[2026-05-01 02:33:58] DEBUG — AUD/USD [4h] fetched 205 candles
+[2026-05-01 02:37:27] DEBUG — Fetching AUD/USD [4h] — attempt 1
+[2026-05-01 02:37:29] DEBUG — AUD/USD [4h] fetched 205 candles
+[2026-05-01 02:38:02] DEBUG — Fetching AUD/USD [4h] — attempt 1
+[2026-05-01 02:38:05] DEBUG — AUD/USD [4h] fetched 205 candles
+[2026-05-01 02:38:33] DEBUG — Fetching AUD/USD [4h] — attempt 1
+[2026-05-01 02:38:35] DEBUG — AUD/USD [4h] fetched 205 candles
+[2026-05-01 11:01:13] INFO  — ╔══════════════════════════════════════════╗
+[2026-05-01 11:01:13] INFO  — ║   CRT Forex Alert Bot v1.0 — Starting    ║
+[2026-05-01 11:01:13] INFO  — ╚══════════════════════════════════════════╝
+[2026-05-01 11:01:13] INFO  — Pairs    : 12
+[2026-05-01 11:01:13] INFO  — Schedule : Every hour at :35 (exact)
+[2026-05-01 11:01:13] INFO  — Session  : 7:00–21:00 UTC
+[2026-05-01 11:01:13] INFO  — ✅ Scheduler started — next run at :35 UTC
+[2026-05-01 11:01:13] INFO  —    Press Ctrl+C to stop.
+
+[2026-05-01 11:05:00] INFO  — === CRT v1.0 Alert Run — 2026-05-01T05:35:00.037888+00:00 ===
+[2026-05-01 11:05:00] INFO  — ⏸  UTC hour 5 outside session (7–21 UTC). Skipping — no API calls made.
+[2026-05-01 13:16:02] INFO  — ╔══════════════════════════════════════════╗
+[2026-05-01 13:16:02] INFO  — ║   CRT Forex Alert Bot v1.0 — Starting    ║
+[2026-05-01 13:16:02] INFO  — ╚══════════════════════════════════════════╝
+[2026-05-01 13:16:02] INFO  — Pairs    : 12
+[2026-05-01 13:16:02] INFO  — Schedule : Every hour at :35 (exact)
+[2026-05-01 13:16:02] INFO  — Session  : 7:00–21:00 UTC
+[2026-05-01 13:16:02] INFO  — ✅ Scheduler started — next run at :35 UTC
+[2026-05-01 13:16:02] INFO  —    Press Ctrl+C to stop.
+
+[2026-05-01 13:45:16] INFO  — === CRT v1.0 Alert Run — 2026-05-01T08:15:16.464055+00:00 ===
+[2026-05-01 13:45:16] INFO  — 🎯 Active Kill Zone: London–NY Full Session (07–21 UTC)
+[2026-05-01 13:45:16] INFO  — ── Processing EUR/USD ──────────────────────────
+[2026-05-01 13:45:16] DEBUG — Fetching EUR/USD [1h] — attempt 1
+[2026-05-01 13:45:18] DEBUG — EUR/USD [1h] fetched 20 candles
+[2026-05-01 13:45:18] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:45:26] DEBUG — Fetching EUR/USD [4h] — attempt 1
+[2026-05-01 13:45:28] DEBUG — EUR/USD [4h] fetched 205 candles
+[2026-05-01 13:45:28] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:45:36] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:45:36] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:45:36] INFO  —   H2 built:   9 candles
+[2026-05-01 13:45:36] DEBUG — EMA bias — close:1.17339  EMA:1.16707  upper:1.16730  lower:1.16684
+[2026-05-01 13:45:36] INFO  —   📊 Trend (H4 200 EMA): 🟢 Bullish  _(price: 1.17339 | EMA: 1.16707)_  [Bias: BUY]
+[2026-05-01 13:45:36] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=15.6min  closed=True
+[2026-05-01 13:45:36] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:45:36] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:45:36] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:45:36] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:45:36] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=135.6min  closed=True
+[2026-05-01 13:45:36] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:45:36] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:45:36] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:45:36] DEBUG — [H2] EUR/USD [2026-05-01 02:00:00] — doji filtered
+[2026-05-01 13:45:36] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:45:36] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=195.6min  closed=True
+[2026-05-01 13:45:36] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:45:36] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:45:36] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:45:36] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:45:36] INFO  — ── Processing GBP/USD ──────────────────────────
+[2026-05-01 13:45:36] DEBUG — Fetching GBP/USD [1h] — attempt 1
+[2026-05-01 13:45:37] DEBUG — GBP/USD [1h] fetched 20 candles
+[2026-05-01 13:45:37] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:45:45] DEBUG — Fetching GBP/USD [4h] — attempt 1
+[2026-05-01 13:45:46] DEBUG — GBP/USD [4h] fetched 205 candles
+[2026-05-01 13:45:46] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:45:54] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:45:54] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:45:54] INFO  —   H2 built:   9 candles
+[2026-05-01 13:45:54] DEBUG — EMA bias — close:1.36020  EMA:1.34242  upper:1.34269  lower:1.34215
+[2026-05-01 13:45:54] INFO  —   📊 Trend (H4 200 EMA): 🟢 Bullish  _(price: 1.36020 | EMA: 1.34242)_  [Bias: BUY]
+[2026-05-01 13:45:54] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=15.9min  closed=True
+[2026-05-01 13:45:54] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:45:54] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:45:54] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:45:54] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:45:54] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=135.9min  closed=True
+[2026-05-01 13:45:54] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:45:54] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:45:54] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:45:54] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:45:54] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=195.9min  closed=True
+[2026-05-01 13:45:54] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:45:54] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:45:54] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:45:54] DEBUG — [H4] GBP/USD [2026-04-30 21:00:00] — ATR filtered (11.8 pips < 50% ATR 26.7 pips)
+[2026-05-01 13:45:54] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:45:54] INFO  — ── Processing AUD/USD ──────────────────────────
+[2026-05-01 13:45:54] DEBUG — Fetching AUD/USD [1h] — attempt 1
+[2026-05-01 13:45:55] DEBUG — AUD/USD [1h] fetched 20 candles
+[2026-05-01 13:45:55] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:46:03] DEBUG — Fetching AUD/USD [4h] — attempt 1
+[2026-05-01 13:46:04] DEBUG — AUD/USD [4h] fetched 205 candles
+[2026-05-01 13:46:04] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:46:12] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:46:12] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:46:12] INFO  —   H2 built:   9 candles
+[2026-05-01 13:46:12] DEBUG — EMA bias — close:0.71938  EMA:0.70624  upper:0.70639  lower:0.70610
+[2026-05-01 13:46:12] INFO  —   📊 Trend (H4 200 EMA): 🟢 Bullish  _(price: 0.71938 | EMA: 0.70624)_  [Bias: BUY]
+[2026-05-01 13:46:12] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=16.2min  closed=True
+[2026-05-01 13:46:12] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:12] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:46:12] DEBUG — [H1] Pair B hit — CLOSED current: [18] 2026-05-01 07:00:00
+[2026-05-01 13:46:12] INFO  —   [H1] ❌ Trend filter blocked — SELL discarded (H4 bias is BUY)
+[2026-05-01 13:46:12] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=136.2min  closed=True
+[2026-05-01 13:46:12] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:12] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:46:12] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:46:12] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:46:12] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=196.2min  closed=True
+[2026-05-01 13:46:12] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:12] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:46:12] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:46:12] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:46:12] INFO  — ── Processing NZD/USD ──────────────────────────
+[2026-05-01 13:46:12] DEBUG — Fetching NZD/USD [1h] — attempt 1
+[2026-05-01 13:46:13] DEBUG — NZD/USD [1h] fetched 20 candles
+[2026-05-01 13:46:13] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:46:21] DEBUG — Fetching NZD/USD [4h] — attempt 1
+[2026-05-01 13:46:22] DEBUG — NZD/USD [4h] fetched 205 candles
+[2026-05-01 13:46:22] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:46:30] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:46:30] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:46:30] INFO  —   H2 built:   9 candles
+[2026-05-01 13:46:30] DEBUG — EMA bias — close:0.58944  EMA:0.58275  upper:0.58287  lower:0.58264
+[2026-05-01 13:46:30] INFO  —   📊 Trend (H4 200 EMA): 🟢 Bullish  _(price: 0.58944 | EMA: 0.58275)_  [Bias: BUY]
+[2026-05-01 13:46:30] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=16.5min  closed=True
+[2026-05-01 13:46:30] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:30] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:46:30] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:46:30] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:46:30] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=136.5min  closed=True
+[2026-05-01 13:46:30] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:30] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:46:30] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:46:30] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:46:30] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=196.5min  closed=True
+[2026-05-01 13:46:30] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:30] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:46:30] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:46:30] DEBUG — [H4] NZD/USD [2026-04-30 21:00:00] — ATR filtered (9.1 pips < 50% ATR 19.3 pips)
+[2026-05-01 13:46:30] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:46:30] INFO  — ── Processing USD/CAD ──────────────────────────
+[2026-05-01 13:46:30] DEBUG — Fetching USD/CAD [1h] — attempt 1
+[2026-05-01 13:46:31] DEBUG — USD/CAD [1h] fetched 20 candles
+[2026-05-01 13:46:31] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:46:39] DEBUG — Fetching USD/CAD [4h] — attempt 1
+[2026-05-01 13:46:41] DEBUG — USD/CAD [4h] fetched 205 candles
+[2026-05-01 13:46:41] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:46:49] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:46:49] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:46:49] INFO  —   H2 built:   9 candles
+[2026-05-01 13:46:49] DEBUG — EMA bias — close:1.35810  EMA:1.37793  upper:1.37820  lower:1.37765
+[2026-05-01 13:46:49] INFO  —   📊 Trend (H4 200 EMA): 🔴 Bearish  _(price: 1.35810 | EMA: 1.37793)_  [Bias: SELL]
+[2026-05-01 13:46:49] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=16.8min  closed=True
+[2026-05-01 13:46:49] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:49] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:46:49] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:46:49] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:46:49] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=136.8min  closed=True
+[2026-05-01 13:46:49] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:49] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:46:49] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:46:49] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:46:49] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=196.8min  closed=True
+[2026-05-01 13:46:49] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:46:49] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:46:49] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:46:49] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:46:49] INFO  — ── Processing USD/CHF ──────────────────────────
+[2026-05-01 13:46:49] DEBUG — Fetching USD/CHF [1h] — attempt 1
+[2026-05-01 13:46:50] DEBUG — USD/CHF [1h] fetched 20 candles
+[2026-05-01 13:46:50] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:46:58] DEBUG — Fetching USD/CHF [4h] — attempt 1
+[2026-05-01 13:46:59] DEBUG — USD/CHF [4h] fetched 205 candles
+[2026-05-01 13:46:59] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:47:07] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:47:07] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:47:07] INFO  —   H2 built:   9 candles
+[2026-05-01 13:47:07] DEBUG — EMA bias — close:0.78208  EMA:0.78928  upper:0.78944  lower:0.78912
+[2026-05-01 13:47:07] INFO  —   📊 Trend (H4 200 EMA): 🔴 Bearish  _(price: 0.78208 | EMA: 0.78928)_  [Bias: SELL]
+[2026-05-01 13:47:07] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=17.1min  closed=True
+[2026-05-01 13:47:07] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:07] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:47:07] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:47:07] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:47:07] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=137.1min  closed=True
+[2026-05-01 13:47:07] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:07] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:47:07] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:47:07] DEBUG — [H2] USD/CHF [2026-05-01 02:00:00] — ATR filtered (5.2 pips < 50% ATR 15.4 pips)
+[2026-05-01 13:47:07] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:47:07] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=197.1min  closed=True
+[2026-05-01 13:47:07] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:07] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:47:07] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:47:07] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:47:07] INFO  — ── Processing GBP/EUR ──────────────────────────
+[2026-05-01 13:47:07] DEBUG — Fetching GBP/EUR [1h] — attempt 1
+[2026-05-01 13:47:08] DEBUG — GBP/EUR [1h] fetched 20 candles
+[2026-05-01 13:47:08] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:47:16] DEBUG — Fetching GBP/EUR [4h] — attempt 1
+[2026-05-01 13:47:18] DEBUG — GBP/EUR [4h] fetched 205 candles
+[2026-05-01 13:47:18] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:47:26] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:47:26] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:47:26] INFO  —   H2 built:   9 candles
+[2026-05-01 13:47:26] DEBUG — EMA bias — close:1.15930  EMA:1.15025  upper:1.15048  lower:1.15002
+[2026-05-01 13:47:26] INFO  —   📊 Trend (H4 200 EMA): 🟢 Bullish  _(price: 1.15930 | EMA: 1.15025)_  [Bias: BUY]
+[2026-05-01 13:47:26] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=17.4min  closed=True
+[2026-05-01 13:47:26] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:26] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:47:26] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:47:26] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:47:26] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=137.4min  closed=True
+[2026-05-01 13:47:26] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:26] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:47:26] DEBUG — [H2] GBP/EUR [2026-05-01 04:00:00] — ATR filtered (4.0 pips < 50% ATR 8.1 pips)
+[2026-05-01 13:47:26] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:47:26] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:47:26] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=197.4min  closed=True
+[2026-05-01 13:47:26] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:26] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:47:26] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:47:26] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:47:26] INFO  — ── Processing EUR/CAD ──────────────────────────
+[2026-05-01 13:47:26] DEBUG — Fetching EUR/CAD [1h] — attempt 1
+[2026-05-01 13:47:27] DEBUG — EUR/CAD [1h] fetched 20 candles
+[2026-05-01 13:47:27] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:47:35] DEBUG — Fetching EUR/CAD [4h] — attempt 1
+[2026-05-01 13:47:37] DEBUG — EUR/CAD [4h] fetched 205 candles
+[2026-05-01 13:47:37] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:47:45] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:47:45] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:47:45] INFO  —   H2 built:   9 candles
+[2026-05-01 13:47:45] DEBUG — EMA bias — close:1.59345  EMA:1.60803  upper:1.60836  lower:1.60771
+[2026-05-01 13:47:45] INFO  —   📊 Trend (H4 200 EMA): 🔴 Bearish  _(price: 1.59345 | EMA: 1.60803)_  [Bias: SELL]
+[2026-05-01 13:47:45] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=17.8min  closed=True
+[2026-05-01 13:47:45] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:45] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:47:45] DEBUG — [H1] Pair B hit — CLOSED current: [18] 2026-05-01 07:00:00
+[2026-05-01 13:47:45] INFO  —   [H1] ✅ SELL | ★★★ STRONG | sweep 2.9 pips | wick/body 14.60× | trend ✓ (SELL)
+[2026-05-01 13:47:45] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=137.8min  closed=True
+[2026-05-01 13:47:45] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:45] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:47:45] DEBUG — [H2] EUR/CAD [2026-05-01 04:00:00] — ATR filtered (7.3 pips < 50% ATR 16.9 pips)
+[2026-05-01 13:47:45] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:47:45] DEBUG — [H2] EUR/CAD [2026-05-01 02:00:00] — ATR filtered (7.2 pips < 50% ATR 16.9 pips)
+[2026-05-01 13:47:45] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:47:45] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=197.8min  closed=True
+[2026-05-01 13:47:45] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:47:45] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:47:45] DEBUG — [H4] EUR/CAD [2026-05-01 01:00:00] — ATR filtered (11.5 pips < 50% ATR 27.0 pips)
+[2026-05-01 13:47:45] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:47:45] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:47:46] INFO  —   📲 Alert sent — EUR/CAD [H1] SELL
+[2026-05-01 13:47:46] INFO  — ── Processing CAD/AUD ──────────────────────────
+[2026-05-01 13:47:46] DEBUG — Fetching CAD/AUD [1h] — attempt 1
+[2026-05-01 13:47:47] DEBUG — CAD/AUD [1h] fetched 20 candles
+[2026-05-01 13:47:47] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:47:55] DEBUG — Fetching CAD/AUD [4h] — attempt 1
+[2026-05-01 13:47:56] DEBUG — CAD/AUD [4h] fetched 205 candles
+[2026-05-01 13:47:56] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:48:04] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:48:04] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:48:04] INFO  —   H2 built:   9 candles
+[2026-05-01 13:48:04] DEBUG — EMA bias — close:1.02377  EMA:1.02784  upper:1.02805  lower:1.02764
+[2026-05-01 13:48:04] INFO  —   📊 Trend (H4 200 EMA): 🔴 Bearish  _(price: 1.02377 | EMA: 1.02784)_  [Bias: SELL]
+[2026-05-01 13:48:04] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=18.1min  closed=True
+[2026-05-01 13:48:04] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:04] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:48:04] DEBUG — [H1] Pair B hit — CLOSED current: [18] 2026-05-01 07:00:00
+[2026-05-01 13:48:04] INFO  —   [H1] ❌ Trend filter blocked — BUY discarded (H4 bias is SELL)
+[2026-05-01 13:48:04] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=138.1min  closed=True
+[2026-05-01 13:48:04] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:04] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:48:04] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:48:04] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:48:04] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=198.1min  closed=True
+[2026-05-01 13:48:04] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:04] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:48:04] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:48:04] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:48:04] INFO  — ── Processing NZD/AUD ──────────────────────────
+[2026-05-01 13:48:04] DEBUG — Fetching NZD/AUD [1h] — attempt 1
+[2026-05-01 13:48:05] DEBUG — NZD/AUD [1h] fetched 20 candles
+[2026-05-01 13:48:05] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:48:13] DEBUG — Fetching NZD/AUD [4h] — attempt 1
+[2026-05-01 13:48:15] DEBUG — NZD/AUD [4h] fetched 205 candles
+[2026-05-01 13:48:15] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:48:23] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:48:23] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:48:23] INFO  —   H2 built:   9 candles
+[2026-05-01 13:48:23] DEBUG — EMA bias — close:0.81940  EMA:0.82521  upper:0.82537  lower:0.82504
+[2026-05-01 13:48:23] INFO  —   📊 Trend (H4 200 EMA): 🔴 Bearish  _(price: 0.81940 | EMA: 0.82521)_  [Bias: SELL]
+[2026-05-01 13:48:23] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=18.4min  closed=True
+[2026-05-01 13:48:23] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:23] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:48:23] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:48:23] DEBUG — [H1] Pair A hit — CLOSED current: [17] 2026-05-01 06:00:00
+[2026-05-01 13:48:23] INFO  —   [H1] ❌ Trend filter blocked — BUY discarded (H4 bias is SELL)
+[2026-05-01 13:48:23] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=138.4min  closed=True
+[2026-05-01 13:48:23] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:23] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:48:23] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:48:23] DEBUG — [H2] NZD/AUD [2026-05-01 02:00:00] — ATR filtered (4.1 pips < 50% ATR 8.8 pips)
+[2026-05-01 13:48:23] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:48:23] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=198.4min  closed=True
+[2026-05-01 13:48:23] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:23] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:48:23] DEBUG — [H4] NZD/AUD [2026-05-01 01:00:00] — ATR filtered (7.7 pips < 50% ATR 15.8 pips)
+[2026-05-01 13:48:23] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:48:23] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:48:23] INFO  — ── Processing GBP/NZD ──────────────────────────
+[2026-05-01 13:48:23] DEBUG — Fetching GBP/NZD [1h] — attempt 1
+[2026-05-01 13:48:24] DEBUG — GBP/NZD [1h] fetched 20 candles
+[2026-05-01 13:48:24] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:48:32] DEBUG — Fetching GBP/NZD [4h] — attempt 1
+[2026-05-01 13:48:34] DEBUG — GBP/NZD [4h] fetched 205 candles
+[2026-05-01 13:48:34] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:48:42] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:48:42] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:48:42] INFO  —   H2 built:   9 candles
+[2026-05-01 13:48:42] DEBUG — EMA bias — close:2.30784  EMA:2.30370  upper:2.30416  lower:2.30324
+[2026-05-01 13:48:42] INFO  —   📊 Trend (H4 200 EMA): 🟢 Bullish  _(price: 2.30784 | EMA: 2.30370)_  [Bias: BUY]
+[2026-05-01 13:48:42] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=18.7min  closed=True
+[2026-05-01 13:48:42] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:42] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:48:42] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:48:42] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:48:42] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=138.7min  closed=True
+[2026-05-01 13:48:42] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:42] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:48:42] DEBUG — [H2] Pair B — no signal. Trying Pair A fallback: CLOSED current at [6] 2026-05-01 02:00:00
+[2026-05-01 13:48:42] INFO  —   [H2] — no valid CRT signal
+[2026-05-01 13:48:42] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=198.7min  closed=True
+[2026-05-01 13:48:42] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:48:42] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:48:42] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:48:42] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:48:42] INFO  — ── Processing EUR/AUD ──────────────────────────
+[2026-05-01 13:48:42] DEBUG — Fetching EUR/AUD [1h] — attempt 1
+[2026-05-01 13:48:43] DEBUG — EUR/AUD [1h] fetched 20 candles
+[2026-05-01 13:48:43] INFO  —   H1 fetched: 20 candles
+[2026-05-01 13:48:51] DEBUG — Fetching EUR/AUD [4h] — attempt 1
+[2026-05-01 13:48:52] DEBUG — EUR/AUD [4h] fetched 205 candles
+[2026-05-01 13:48:52] INFO  —   H4 fetched: 205 candles
+[2026-05-01 13:49:00] DEBUG — H2 bucket 2026-04-30 12:00:00 — 1 bar(s), discarded
+[2026-05-01 13:49:00] DEBUG — H2 bucket 2026-05-01 08:00:00 — 1 bar(s), discarded
+[2026-05-01 13:49:00] INFO  —   H2 built:   9 candles
+[2026-05-01 13:49:00] DEBUG — EMA bias — close:1.63140  EMA:1.65276  upper:1.65309  lower:1.65243
+[2026-05-01 13:49:00] INFO  —   📊 Trend (H4 200 EMA): 🔴 Bearish  _(price: 1.63140 | EMA: 1.65276)_  [Bias: SELL]
+[2026-05-01 13:49:00] DEBUG — isTFCandleClosed [H1]: detectCandle=2026-05-01 07:00:00  closedAt=08:00 UTC  diff=19.0min  closed=True
+[2026-05-01 13:49:00] INFO  —   [H1] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:49:00] DEBUG — [H1] Forming candle excluded: [19] 2026-05-01 08:00:00 | Using CLOSED candle at [18] 2026-05-01 07:00:00 as current
+[2026-05-01 13:49:00] DEBUG — [H1] Pair B — no signal. Trying Pair A fallback: CLOSED current at [17] 2026-05-01 06:00:00
+[2026-05-01 13:49:00] INFO  —   [H1] — no valid CRT signal
+[2026-05-01 13:49:00] DEBUG — isTFCandleClosed [H2]: detectCandle=2026-05-01 04:00:00  closedAt=06:00 UTC  diff=139.0min  closed=True
+[2026-05-01 13:49:00] INFO  —   [H2] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:49:00] DEBUG — [H2] Forming candle excluded: [8] 2026-05-01 06:00:00 | Using CLOSED candle at [7] 2026-05-01 04:00:00 as current
+[2026-05-01 13:49:00] DEBUG — [H2] Pair B hit — CLOSED current: [7] 2026-05-01 04:00:00
+[2026-05-01 13:49:00] INFO  —   [H2] ✅ SELL | ★★★ STRONG | sweep 5.9 pips | wick/body 5.00× | trend ✓ (SELL)
+[2026-05-01 13:49:00] DEBUG — isTFCandleClosed [H4]: detectCandle=2026-05-01 01:00:00  closedAt=05:00 UTC  diff=199.0min  closed=True
+[2026-05-01 13:49:00] INFO  —   [H4] ✅ Candle close boundary confirmed — detecting
+[2026-05-01 13:49:00] DEBUG — [H4] Forming candle excluded: [204] 2026-05-01 05:00:00 | Using CLOSED candle at [203] 2026-05-01 01:00:00 as current
+[2026-05-01 13:49:00] DEBUG — [H4] Pair B — no signal. Trying Pair A fallback: CLOSED current at [202] 2026-04-30 21:00:00
+[2026-05-01 13:49:00] INFO  —   [H4] — no valid CRT signal
+[2026-05-01 13:49:02] INFO  —   📲 Alert sent — EUR/AUD [H2] SELL
+[2026-05-01 13:49:02] INFO  — === Run complete. Total alerts sent: 2 ===
+[2026-05-01 13:50:17] INFO  — ╔══════════════════════════════════════════╗
+[2026-05-01 13:50:17] INFO  — ║   CRT Forex Alert Bot v1.0 — Starting    ║
+[2026-05-01 13:50:17] INFO  — ╚══════════════════════════════════════════╝
+[2026-05-01 13:50:17] INFO  — Pairs    : 12
+[2026-05-01 13:50:17] INFO  — Schedule : Every hour at :35 (exact)
+[2026-05-01 13:50:17] INFO  — Session  : 7:00–21:00 UTC
+[2026-05-01 13:50:21] INFO  — ✅ Scheduler started — next run at :35 IST
+[2026-05-01 13:50:21] INFO  —    Press Ctrl+C to stop.
+
