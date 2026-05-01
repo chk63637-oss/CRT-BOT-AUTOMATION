@@ -200,19 +200,6 @@ def detect_crt(pair: str, tf_label: str, candles: List[Dict]) -> Optional[Dict]:
         log.debug(f"[{tf_label}] Pair B hit — CLOSED current: [{n-2}] {candles[n-2]['time']}")
         return sig_b
 
-    # Pair A — fallback (requires ≥5 candles)
-    if n >= 5:
-        log.debug(
-            f"[{tf_label}] Pair B — no signal. "
-            f"Trying Pair A fallback: CLOSED current at [{n-3}] {candles[n-3]['time']}"
-        )
-        sig_a = _evaluate_crt_pair(pair, tf_label, candles[n-4], candles[n-3], atr, min_sweep)
-        if sig_a:
-            log.debug(f"[{tf_label}] Pair A hit — CLOSED current: [{n-3}] {candles[n-3]['time']}")
-            return sig_a
-    else:
-        log.debug(f"[{tf_label}] Pair A skipped — need ≥5 candles, got {n}")
-
     return None
 
 
