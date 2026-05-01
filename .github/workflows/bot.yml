@@ -5,6 +5,9 @@ on:
     types: [run-bot]
   workflow_dispatch: # Allows you to run it manually from GitHub website if needed
 
+permissions:
+  contents: write
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -26,3 +29,11 @@ jobs:
         run: |
           # Use --run-now to run exactly once and exit (perfect for GitHub Actions)
           python main.py --run-now
+
+      - name: Save Memory (Duplicate Store)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add duplicate_store.json || true
+          git commit -m "Update duplicate store" || true
+          git push || true
