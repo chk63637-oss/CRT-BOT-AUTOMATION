@@ -40,6 +40,11 @@ def run_crt_alerts() -> None:
     now = datetime.now(timezone.utc)
     log.info(f"=== CRT v1.0 Alert Run — {now.isoformat()} ===")
 
+    # ── Weekend gate ──────────────────────────────────────────
+    if now.weekday() >= 5: # 5 = Saturday, 6 = Sunday
+        log.info("⏸  Market is closed on weekends. Skipping — no API calls made.")
+        return
+
     # ── Kill zone gate ────────────────────────────────────────
     if not is_in_kill_zone():
         log.info(
