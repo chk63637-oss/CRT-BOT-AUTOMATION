@@ -6,6 +6,23 @@ import time
 import sys
 from datetime import datetime, timezone
 
+# ══════════════════════════════════════════════════════════════
+#  LAYER 1 — MODULE LEVEL WEEKEND GUARD
+#  Sabse pehle yahan check hoga — GitHub Actions pe bhi,
+#  local pe bhi, kisi bhi entry point se bhi.
+#  Agar Saturday/Sunday hai → script turant exit.
+#  Koi import bhi poora nahi hoga, koi API call nahi.
+# ══════════════════════════════════════════════════════════════
+_now_utc = datetime.now(timezone.utc)
+if _now_utc.weekday() >= 5:
+    print(
+        f"[{_now_utc.strftime('%Y-%m-%d %H:%M:%S')}] INFO  — "
+        f"⏸  WEEKEND GUARD (Layer 1): {['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][_now_utc.weekday()]} "
+        f"— Forex market closed. Script exiting immediately."
+    )
+    sys.exit(0)
+# ─────────────────────────────────────────────────────────────
+
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 import config
@@ -34,15 +51,47 @@ def get_kill_zone_label() -> str:
 
 
 # ══════════════════════════════════════════════════════════════
+#  LAYER 2 — CANDLE DATE VALIDATOR
+#  Twelve Data weekend pe Friday ka stale data ya fake data
+#  bhejta hai jiska timestamp Saturday ka hota hai.
+#  Yeh function check karta hai ki fetched candles ka
+#  latest timestamp actually ek weekday (Mon-Fri) ka hai.
+#  Agar Saturday/Sunday ka candle aaya → reject karo.
+# ══════════════════════════════════════════════════════════════
+def is_candle_data_valid(candles: list, pair: str) -> bool:
+    """
+    Validates that the most recent candle is from a weekday.
+    Rejects fake/stale weekend data from Twelve Data.
+    """
+    if not candles:
+        return False
+    last_candle_dt = datetime.fromisoformat(
+        candles[-1]["time"].replace(" ", "T")
+    ).replace(tzinfo=timezone.utc)
+    weekday = last_candle_dt.weekday()
+    if weekday >= 5:
+        day_name = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"][weekday]
+        log.warning(
+            f"  ⚠️  FAKE WEEKEND DATA detected — {pair} "
+            f"last candle is {day_name} ({candles[-1]['time']}) — REJECTED"
+        )
+        return False
+    return True
+
+
+# ══════════════════════════════════════════════════════════════
 #  MAIN RUN — called every hour at :35
 # ══════════════════════════════════════════════════════════════
 def run_crt_alerts() -> None:
     now = datetime.now(timezone.utc)
     log.info(f"=== CRT v1.0 Alert Run — {now.isoformat()} ===")
 
-    # ── Weekend gate ──────────────────────────────────────────
-    if now.weekday() >= 5: # 5 = Saturday, 6 = Sunday
-        log.info("⏸  Market is closed on weekends. Skipping — no API calls made.")
+    # ── LAYER 3 — Weekend gate inside function (final safety net) ─
+    # Yeh tab kaam aata hai jab scheduler already chal raha ho
+    # aur Friday raat se Saturday aa jaaye bich mein.
+    if now.weekday() >= 5:
+        day_name = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"][now.weekday()]
+        log.info(f"⏸  WEEKEND GUARD (Layer 3): {day_name} — market closed. Skipping.")
         return
 
     # ── Kill zone gate ────────────────────────────────────────
@@ -68,6 +117,10 @@ def run_crt_alerts() -> None:
             if not h1:
                 log.error(f"H1 fetch failed — {pair}, skipping")
                 continue
+            # LAYER 2: Candle date check — reject fake weekend data
+            if not is_candle_data_valid(h1, pair):
+                log.warning(f"  Skipping {pair} — H1 candle data is from weekend (fake data)")
+                continue
             log.info(f"  H1 fetched: {len(h1)} candles")
             time.sleep(config.API_SLEEP)
 
@@ -75,6 +128,10 @@ def run_crt_alerts() -> None:
             h4 = fetch_candles(pair, "4h", config.H4_CANDLES)
             if not h4:
                 log.error(f"H4 fetch failed — {pair}, skipping")
+                continue
+            # LAYER 2: Candle date check — reject fake weekend data
+            if not is_candle_data_valid(h4, pair):
+                log.warning(f"  Skipping {pair} — H4 candle data is from weekend (fake data)")
                 continue
             log.info(f"  H4 fetched: {len(h4)} candles")
             time.sleep(config.API_SLEEP)
